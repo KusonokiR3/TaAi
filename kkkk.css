@@ -1,0 +1,33 @@
+#historia{
+   font-size: 25px;
+   padding-top: 50px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+#div{
+    border: solid 20px rgb(8, 48, 8);
+    background-color: rgb(8, 48, 8);
+    display: block;
+    text-align: center;
+   
+}
+#Texto{
+    padding-top: 100px;
+    text-align: center;
+    background-color: rgb(140, 142, 145);
+    width: 1250px;
+    height: 350px;
+    opacity: 70%;
+}
+#imagem{
+    text-align: center;
+    padding-top: 20px;
+    display:block
+    
+}
+#body{
+    background-image: url(WhatsApp\ Image\ 2023-06-01\ at\ 16.34.09.jpeg);
+}
+#isso{
+    background-color: rgb(8, 48, 8);
+    position: fixed;
+}
