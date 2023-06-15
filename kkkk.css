@@ -1,13 +1,48 @@
+#body{
+    background-image: url(WhatsApp\ Image\ 2023-06-01\ at\ 16.34.09.jpeg);
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-rows:  100px 0px 200px 0px  800px;
+    grid-template-columns: 250px 250px 250px 250px ;
+    grid-template-areas: 
+    "div div div div"
+    "imagem imagem imagem imagem"
+    "hiat1 hiat1 hiat1 hiat1"
+    "Texto Texto Texto Texto"
+    "foot foot foot foot"; 
+}
+@media only screen and (min-width: 600px;) end (max-width: 800px)
+    { #body{
+        grid-template-areas: 
+        "div div"  
+        "imagem imagem" 
+        "hiat1 hiat1" 
+        "Texto Texto"
+        "foot foot";
+
+    }
+
+    }
+
+#hiat1{
+align-self: end;
+grid-area: hiat1;
+
+}
 #historia{
    font-size: 25px;
    padding-top: 50px;
    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+   align-self: flex-end;
 }
 #div{
     border: solid 20px rgb(8, 48, 8);
     background-color: rgb(8, 48, 8);
     display: block;
     text-align: center;
+    grid-area: div;
+    width: 1300px;
    
 }
 #Texto{
@@ -17,17 +52,26 @@
     width: 1250px;
     height: 350px;
     opacity: 70%;
+    grid-area: Texto;
 }
 #imagem{
-    text-align: center;
+    
     padding-top: 20px;
-    display:block
+    display:block;
+    grid-area: imagem;
+    justify-self:center ;
+    margin-left: 350px;
+    
     
 }
-#body{
-    background-image: url(WhatsApp\ Image\ 2023-06-01\ at\ 16.34.09.jpeg);
-}
+
+
 #isso{
     background-color: rgb(8, 48, 8);
-    position: fixed;
+    
+}
+#fot{
+    grid-area: foot;
+    align-self: flex-end;
+    width: 1340px;
 }
